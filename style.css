@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Cuprum&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Cuprum", sans-serif;
+}
+
+input {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: #F44336;
+}
+body #password-generator {
+  padding: 2rem;
+  margin: 0 auto;
+  width: 500px;
+  border-radius: 3px;
+  box-shadow: 0 0 2px #1f1f1f;
+  border: 3px solid #d5d4ff;
+  position: relative;
+  white-space: nowrap;
+}
+body #password-generator #password-output {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0 auto 1.2rem;
+  width: 100%;
+}
+body #password-generator .range {
+  justify-content: space-between;
+  padding: 1rem 1rem 1rem 2.5rem;
+}
+body #password-generator .range input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40%;
+  max-width: 100%;
+  height: 15px;
+  padding: 0px;
+  background: #d5d4ff;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  box-shadow: 0 2px 35px rgba(0, 0, 0, 0.4555);
+  border-radius: 10px;
+  cursor: pointer;
+  scroll-behavior: smooth;
+  z-index: 1;
+}
+body #password-generator .range input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: black;
+  cursor: pointer;
+  border-radius: 18px;
+  transition: 0.5s ease;
+}
+body #password-generator .range input[type=range]::-webkit-slider-thumb:focus, body #password-generator .range input[type=range]::-webkit-slider-thumb:active {
+  padding: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+body #password-generator .range #display-password-length {
+  text-align: center;
+  font-size: 1.4rem;
+  width: 80px;
+  padding-top: 10px;
+}
+body #password-generator .flex {
+  margin: 1rem 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+body #password-generator .flex input {
+  display: none;
+}
+body #password-generator .flex input:checked + label {
+  background: #d5d4ff;
+  filter: brightness(120%);
+  transform: scale(1.1);
+}
+body #password-generator .flex label {
+  border: 2px solid #d5d4ff;
+  border-radius: 4px;
+  padding: 0.8rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+  text-align: center;
+  display: block;
+  width: 80px;
+  transition: 0.2s ease;
+}
+body #password-generator .flex label:hover {
+  filter: sepia(70%);
+}
+body #password-generator button {
+  outline: none;
+  background: #d5d4ff;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0.5rem 0;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px #1f1f1f;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+body #password-generator button:hover {
+  transform: translateX(4px);
+  filter: brightness(120%);
+}
+
+/* SIGNATURE */
+.signature {
+  display: flex;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: rgba(51, 51, 51, 0.808);
+  padding: 0.5rem 0.5rem;
+  border-radius: 50px;
+  box-shadow: 0 0 0px 3px #09fbba;
+  color: #09fbba;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.signature:hover {
+  transform: translateX(3px);
+  background: linear-gradient(90deg, rgba(51, 51, 51, 0.808) 30%, rgba(100, 100, 100, 0.808) 100%);
+  transition: 0.3s ease;
+  box-shadow: 0 0 0px 3px #4ffacc;
+  color: #4ffacc;
+}
+
+.signature:focus {
+  outline: none;
+}
+
+.signature .flag {
+  height: 13px;
+  width: 22px;
+  background: linear-gradient(90deg, blue 36%, white 36%, white 67%, red 67%);
+  box-shadow: inset 2px 2px 2px #222, 2px 2px 1px #222;
+  margin-right: 6px;
+  transform: translateY(3px);
+}
+
+.signature h3 {
+  margin: 0;
+}
+
+.signature i {
+  font-size: 1.1rem;
+  text-shadow: 2px 2px 1px #222;
+  transform: translateY(2px);
+}
+
+/*# sourceMappingURL=style.css.map */
